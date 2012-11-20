@@ -51,15 +51,12 @@ module.exports = function(){
   // Exercise 3
   // ==============
   
-  var hobbies = function(users) {
-    var results = [];
+  var lengthOfAllHobbies = function(users) {
+    var count = 0;
     for(u in users) {
-      var hobbies = users[u].hobbies;
-      for(h in hobbies) {
-        results.push(hobbies[h]);
-      }
+      count += users[u].hobbies.length;
     }
-    return results;
+    return count;
   }
   
   
@@ -80,7 +77,7 @@ module.exports = function(){
   return {
     names: names,
     longNames: longNames,
-    hobbies: hobbies,
+    lengthOfAllHobbies: lengthOfAllHobbies,
     personWithTheMostHobbies: personWithTheMostHobbies
   }
 }

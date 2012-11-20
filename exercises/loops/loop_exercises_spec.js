@@ -22,7 +22,7 @@ describe("Exercises", function(){
   });
   
   it('Exercise 3', function(){
-    expect(E.hobbies(USERS)).toEqual(["fishing", "jogging", "hiking", "boggle", "legos", "stone masonry", "cars", "dancing", "reading", "crying"])
+    expect(E.lengthOfAllHobbies(USERS)).toEqual(10)
   });
   
   it('Bonus', function(){

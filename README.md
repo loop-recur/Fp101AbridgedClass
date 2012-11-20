@@ -5,4 +5,6 @@ Fp101AbridgedClass
 
 Example of running tests:
 
-jasmine-node exercises/compose/compose_exercises_spec.js
+cd exercises/first_class 
+jasmine-node first_class_exercises_spec.js
+

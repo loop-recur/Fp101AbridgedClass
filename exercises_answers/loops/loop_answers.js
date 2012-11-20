@@ -42,8 +42,8 @@ module.exports = function(){
   // Exercise 3
   // ==============
   
-  var hobbies = function(users) {
-    return reduce(function(a, u){ return a.concat(u.hobbies); }, [], users);
+  var lengthOfAllHobbies = function(users) {
+    return reduce(function(acc, u){ return acc + u.hobbies.length; }, 0, users);
   };
   
   
@@ -60,7 +60,7 @@ module.exports = function(){
   return {
     names: names,
     longNames: longNames,
-    hobbies: hobbies,
+    lengthOfAllHobbies: lengthOfAllHobbies,
     personWithTheMostHobbies: personWithTheMostHobbies
   }
 }
