@@ -6,5 +6,6 @@ Fp101AbridgedClass
 Example of running tests:
 
 cd exercises/first_class 
+
 jasmine-node first_class_exercises_spec.js
 
